@@ -40,11 +40,13 @@
             this.IntroInfo.Name = "IntroInfo";
             this.IntroInfo.Size = new System.Drawing.Size(539, 516);
             this.IntroInfo.TabIndex = 0;
-            this.IntroInfo.Text = "Klon gdy Tron\r\nProjekt C# WPA PG lato 2017 \r\nAutor: Patryk Wyżgowski\r\n\r\nWciśnij E" +
+            this.IntroInfo.Text = "Klon gry Tron\r\nProjekt C# WPA PG lato 2017 \r\nAutor: Patryk Wyżgowski\r\n\r\nWciśnij E" +
     "nter, by rozpocząć grę.\r\n\r\nSterowanie:\r\nGracz 1: Strzałki\r\nGracz 2: WSAD\r\nPauza:" +
     " Spacja";
             this.IntroInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.IntroInfo.Click += new System.EventHandler(this.label1_Click);
+            this.IntroInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.IntroInfo_Paint);
+            this.IntroInfo.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.IntroInfo_PreviewKeyDown);
             // 
             // PW_TRON
             // 
