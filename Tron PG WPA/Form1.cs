@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Tron_PG_WPA
 {
-    public partial class Form1 : Form
+    public partial class PW_TRON : Form
     {
-        public Form1()
+        public PW_TRON()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

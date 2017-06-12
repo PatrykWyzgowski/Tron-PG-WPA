@@ -16,7 +16,7 @@ namespace Tron_PG_WPA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new PW_TRON());
         }
     }
 }
