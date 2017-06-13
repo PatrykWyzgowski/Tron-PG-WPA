@@ -32,17 +32,7 @@ namespace Tron_PG_WPA
 
         }
 
-        private void IntroInfo_KeyDown(object sender, KeyEventArgs e)
-        {
-            switch(e.KeyData)
-            {
-                case Keys.Enter:
-                    break;
-                case Keys.Space:
-                    break;
-         
-            }
-        }
+      
 
         private void IntroInfo_Paint(object sender, PaintEventArgs e)
         {
@@ -54,9 +44,29 @@ namespace Tron_PG_WPA
 
         }
 
+        private void PW_TRON_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void Restart()
         {
 
         }
     }
 }
+/*switch(e.KeyData)
+            {
+                case Keys.Enter:
+                    if(IntroInfo.Visible)
+                    {
+                        IntroInfo.Visible = false;
+                        my_timer.Start();
+                    }
+                    break;
+                case Keys.Space:
+                    if (!IntroInfo.Visible)
+                        my_timer.Enabled = (my_timer.Enabled)? false : true;
+                    break;
+         
+            }*/
